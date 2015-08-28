@@ -1,6 +1,7 @@
+//phong 570611022
 using System;
 
-namespace Lab2
+namespace Lab201
 {
 	class MainClass
 	{
@@ -21,9 +22,9 @@ namespace Lab2
 				Console.WriteLine (s);
 
 			Console.WriteLine ("\n--- Playing with s4, s5, s6 objects ---");
-			stds [4].Name = "Mario";
-			stds [5].YearOfBirth = 1900;
-			stds [6].isActive = false;
+			stds [4].setName("Mario");
+			stds [5].setYearOfBirth(1900);
+			stds [6].setisActive(false);
 			for (int i = 4; i < stds.Length; i++)
 				Console.WriteLine (stds [i]);
 
