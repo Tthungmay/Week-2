@@ -21,7 +21,7 @@ namespace Lab202
 			Console.WriteLine ("\n--- playing with cpe200 object ---");
             cpe200.setCourseID("261200");
 			Console.WriteLine (cpe200);
-			cpe200.setCourseID("261200");
+			cpe200.setCourseID("2612OO");
 			cpe200.setCourseID("2612002");
 
 			cpe200.setNumStudents(40);
