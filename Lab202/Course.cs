@@ -14,7 +14,7 @@ namespace Lab202
             private int MaxStudents = 30;
             private int NumStudents;
 
-            //function method
+            //constructor
             public Course()
             {
                 MaxStudents = 30;
@@ -41,17 +41,22 @@ namespace Lab202
                 this.Lecturer = Lecturer;
                 this.MaxStudents = MaxStudents;
             }
-
+            
+            //function method
+            public string getName()
+            {
+                return Name;
+            }
             public void setName(string Name)
             {
                 this.Name = Name;
             }
 
-            public string getName()
-            {
-                return Name;
-            }
 
+            public string getCouseID()
+            {
+                return CourseID;
+            }
             public void setCourseID(string CourseID)
             {
                 int number;
@@ -66,21 +71,22 @@ namespace Lab202
                     this.CourseID = CourseID;
                 }
             }
-            public string getCouseID()
-            {
-                return CourseID;
-            }
 
+            
+            public string getLecturer()
+            {
+                return Lecturer;
+            }
             public void setLecturer(string Lecturer)
             {
                 this.Lecturer = Lecturer;
             }
 
-            public string getLecturer()
-            {
-                return Lecturer;
-            }
 
+            public int getMaxStudents()
+            {
+                return MaxStudents;
+            }
             public void setMaxStudents(int MaxStudents)
             {
                 if ((MaxStudents >= 0 && MaxStudents <= 80)||(MaxStudents >= NumStudents))
@@ -93,11 +99,11 @@ namespace Lab202
                 }
             }
 
-            public int getMaxStudents()
-            {
-                return MaxStudents;
-            }
 
+            public int getNumStudents()
+            {
+                return NumStudents;
+            }
             public void setNumStudents(int NumStudents)
             {
                 if ((NumStudents > MaxStudents)||(NumStudents < 0))
@@ -110,12 +116,6 @@ namespace Lab202
                 }
             }
 
-            public int getNumStudents()
-            {
-
-                return NumStudents;
-
-            }
 
             public override string ToString()
             {
