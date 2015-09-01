@@ -50,51 +50,23 @@ namespace Lab201
         {
             this.name = name;
         }
-
-        public string getName()
-        {
-
-            return "";
-
-
-        }
-
         public void setStudent_id(string student_id)
         {
             this.student_id = student_id;
 
         }
-        public string getStudent_id()
-        {
-
-            return "";
-        }
         public void setYearOfBirth(int year_of_birth)
         {
             if (year_of_birth <= 1950 || year_of_birth >= 2000)
             {
-                Console.WriteLine(student_id+":error try setting invalid year-of-birth value!");
+                Console.WriteLine(student_id + ":error try setting invalid year-of-birth value!");
             }
             else
             { this.year_of_birth = 2015 - year_of_birth; }
         }
-        public int getYear_of_birth()
-        {
-
-            return 0;
-
-        }
-
         public void setisActive(bool status)
         {
             isActive = status;
-
-        }
-        public bool getActive()
-        {
-
-
-            return true;
 
         }
         public override string ToString()
